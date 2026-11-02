@@ -6,13 +6,23 @@ WebView Native UI is an independent open-source initiative for bringing native i
 
 ## Projects
 
-| Project | Audience | Purpose |
-| --- | --- | --- |
-| [Engine](https://github.com/webview-native-ui/engine) | Capacitor and Cordova plugin authors | Coordinate native UI with Web content, including scrolling and overlays. |
-| [Capacitor Plugin](https://github.com/webview-native-ui/capacitor-plugin) | Capacitor app developers | Application-facing Native UI integration. **In development.** |
-| [Ionic iOS Theme](https://github.com/webview-native-ui/ionic-theme-ios27) | Ionic app developers | iOS-oriented UI styling. |
-| [Ionic Material Design 3 Theme](https://github.com/webview-native-ui/ionic-theme-md3) | Ionic app developers | Material Design 3 styling. |
-| [Ionic Theme Utils](https://github.com/webview-native-ui/ionic-theme-utils) | Theme developers | Shared utilities for the theme projects. |
+| Project                                                                               | Package                       | Purpose                                                                                                                              |
+| ------------------------------------------------------------------------------------- | ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| [Engine](https://github.com/webview-native-ui/engine)                                 | `@webview-native-ui/engine`   | Native/Web coordination for Capacitor and Cordova plugin authors: placement, scrolling, overlays, and shared control infrastructure. |
+| [Capacitor Plugin](https://github.com/webview-native-ui/capacitor-plugin)             | `@rdlabo/capacitor-native-ui` | Add native controls to Capacitor apps, with standard HTML and optional Ionic integration.                                            |
+| [Ionic iOS Theme](https://github.com/webview-native-ui/ionic-theme-ios27)             | `@rdlabo/ionic-theme-ios27`   | iOS styling, motion, and Web layout for Ionic apps; also hosts the combined theme and Native UI demo.                                |
+| [Ionic Material Design 3 Theme](https://github.com/webview-native-ui/ionic-theme-md3) | `@rdlabo/ionic-theme-md3`     | Material Design 3 styling for Ionic apps.                                                                                            |
+| [Ionic Theme Utils](https://github.com/webview-native-ui/ionic-theme-utils)           | `@rdlabo/ionic-theme-utils`   | Shared theme utilities, animation helpers, Sass mixins, and theme build tools.                                                       |
+
+## Choose a starting point
+
+- **Add native controls to a Capacitor app:** start with the [Capacitor plugin setup guide](https://github.com/webview-native-ui/capacitor-plugin/blob/main/docs/setup.md).
+- **Build a Capacitor or Cordova plugin:** start with the [Engine guides](https://github.com/webview-native-ui/engine/tree/main/docs/getting-started).
+- **Style an Ionic app:** start with the [iOS theme](https://github.com/webview-native-ui/ionic-theme-ios27) or [MD3 theme](https://github.com/webview-native-ui/ionic-theme-md3).
+
+Engine provides the shared foundation; runtime-specific plugins expose it to applications, and themes own Web styling and layout. Installing a theme does not activate native controls. Cordova support currently means integrating Engine into a Cordova plugin; an application-facing Cordova Native UI plugin is not yet available.
+
+The projects release independently. Follow each package's compatibility and setup guide. Documentation on `main` can include changes that are not yet published; use the documentation for your installed release when available.
 
 ## See it in action
 

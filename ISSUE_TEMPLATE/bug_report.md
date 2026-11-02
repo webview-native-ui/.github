@@ -14,7 +14,7 @@ labels: bug
 
 ## Environment
 
-- Package/version:
+- Package/version (include Engine, plugin, and theme versions when used together):
 - iOS/Android version:
 - Device/simulator:
 - Capacitor/Cordova/Ionic version (if relevant):

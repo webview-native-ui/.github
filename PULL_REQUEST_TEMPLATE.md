@@ -12,4 +12,4 @@ How was it tested? Include commands, devices, or reproduction steps.
 
 ## Compatibility / documentation
 
-Describe any API changes, limitations, or documentation updates (or state "None").
+Describe any API changes, limitations, or documentation updates (or state "None"). For cross-repository changes, link the related work and state the dependency/release order. Identify any validation that used unpublished candidate packages.
